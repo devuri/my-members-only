@@ -1,10 +1,10 @@
 === iCeyi Members Only Shortcode ===
-Contributors: jrpage
+Contributors: icelayer
 Tags: member, members, profile, role, roles, shortcode, user, access, authentication, block, community, content, login, membership, password, permissions, register, registration, restriction, security, iceyi, members only,
 Donate link: http://qweelo.com/donate/
 Requires at least: 3.4
 Tested up to: 3.9.1
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: GNU General Public License
 
 Shorcodes to protect content in posts and pages,shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view.
