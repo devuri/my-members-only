@@ -4,7 +4,7 @@ Plugin Name: iCeyi Members Only Shortcode
 Plugin URI: http://icelayer.qweelo.com
 Description: Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view.
 Author: IceLAYER
-Version: 1.5.0
+Version: 1.5.1
 Author URI: http://icelayer.qweelo.com
 */
 
