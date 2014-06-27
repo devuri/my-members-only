@@ -1,5 +1,5 @@
 === iCeyi Members Only Shortcode ===
-Contributors: icelayer
+Contributors: qweelo, icelayer
 Tags: member, members, profile, role, roles, shortcode, user, access, authentication, block, community, content, login, membership, password, permissions, register, registration, restriction, security, iceyi, icelayer, jrpage, qweelo, members only,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6D6W2KXB88NKE
 Requires at least: 3.4
