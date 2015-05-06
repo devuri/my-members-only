@@ -1,16 +1,20 @@
 <?php
 /*
 Plugin Name: iCeyi Members Only Shortcode
-Plugin URI: http://icelayer.qweelo.com
+Plugin URI: http://qweelo.com/wordpress-plugins/
 Description: Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view.
-Author: IceLAYER
-Version: 1.5.2
-Author URI: http://icelayer.qweelo.com
+Version: 2.1.0
+Author URI: http://qweelo.com/
+License: GPLv2 or later
+Text Domain: qw-iceyi-mos
+Usage: Simple and easy to use, install and activate.
+
+Author URI: http://.qweelo.com
 */
 
 /*------------------------------------------------------------------*/
 
-/*  Copyright 2014 iCeyi Members Only (email : icelayer@yahoo.com)
+/*  Copyright 2015 iCeyi Members Only (email : icelayer@yahoo.com)
 
 
 	This program is free software; you can redistribute it and/or modify
@@ -26,38 +30,101 @@ Author URI: http://icelayer.qweelo.com
 
 */
 
-/*------------------------------------------------------------------*/
+/*----------------------------------------------------
+				* ACCESS DENIED *
+----------------------------------------------------*/	
 
+	$qwpluginpathe = 'iceyi-members-only-main.php';
 
+	if (basename($_SERVER['SCRIPT_FILENAME']) == $qwpluginpathe)
+		{
+		die ("<title>QWEELO &#8212; Qweelo.com </title><div align='center'><h1>QWEELO</h1>SOMETHING WENT WRONG PLEASE CONTACT SUPPORT!!!</div>");
+	}
+	
+/*----------------------------------------------------
+				* LANG STUFF *
+----------------------------------------------------*/	
+	// plugin languages
+		add_action( 'plugins_loaded', 'qwmos_textdomain' );
 
-//direct file ACCESS DENIED
+/**
+ Load plugin textdomain.
+ */
+	function qwmos_textdomain() {
+		load_plugin_textdomain( 'qw-iceyi-mos', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
+	}
+/*----------------------------------------------------
+				* START THE PLUGIN *
+----------------------------------------------------*/	
+//.......CONSTANTS
 
-$iceymembersonly_pluginpathe = 'iceyi-members-only-main.php';
-if (basename($_SERVER['SCRIPT_FILENAME']) == $iceymembersonly_pluginpathe)
+		// header
+		define('QMOS_HEADER', dirname( __FILE__ ) .'/admin-header.php');
 
-{
+		// plugin page
+		define('QMOS_PAGE', dirname( __FILE__ ) .'/admin-page.php');		
 
-    die ("SOMETHING WENT WRONG PLEASE CONTACT SUPPORT!!!");
-
-}
-
-/*=========================================START THE PLUGIN============================================*/
-
-
+		// plugin footer
+		define('QMOS_FOOTER', dirname( __FILE__ ) .'/admin-footer.php');
+/*----------------------------------------------------
+				* ADMIN MENU *
+----------------------------------------------------*/	
+	
+	add_action('admin_menu', 'qw_qwmos_menu_page');
+	function qw_qwmos_menu_page() {
+			
+				$page_title ='Members Only Shortcode';
+				$menu_title = 'iCeyi Members';
+				$capability = 'manage_options';
+				$menu_slug = 'iceyi-mos-qw';
+				$function = 'admin_page_qwmos';
+				$position = '6.124';
+				$icon_url = '';
+				add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
+		
+	}	//fend
+/*------------------------------------------------------------------
+				* RENDER ADMIN PAGE FUNCTION   *
+------------------------------------------------------------------*/	
+	function admin_page_qwmos(){					
+				//HEADER;
+				include_once(QMOS_HEADER);
+				//PAGE;
+				include_once(QMOS_PAGE);			
+				//FOOTER;
+				include_once(QMOS_FOOTER);
+	}// fend	
 
 //--------------------  [membersonly] protected [/membersonly] -----------------------------------*/
 
 function membersonly_shortcode_iceyi( $atts, $content = null ) {
 
 		ob_start();
-//...........................................................................................		
+		//...........................................................................................		
 		if ( is_user_logged_in() ) {
 		echo do_shortcode($content) ;
 		}else{ echo 'Members Only Login Here'; wp_login_form( $args ); }/* // login check */;		
-//.............................................................................................
-	$output_membersonly_obj = ob_get_contents(); 
-	ob_end_clean();
-	return $output_membersonly_obj;
+		//.............................................................................................
+		$output_membersonly_obj = ob_get_contents(); 
+		ob_end_clean();
+		return $output_membersonly_obj;
 	
 	}// END SHORTCODE
-add_shortcode( 'membersonly', 'membersonly_shortcode_iceyi' );
+	add_shortcode( 'membersonly', 'membersonly_shortcode_iceyi' );
+
+//--------------------  [qw_members] protected [/qw_members] -----------------------------------*/
+
+function members_qw( $atts, $content = null ) {
+
+		ob_start();
+		//...........................................................................................		
+		if ( is_user_logged_in() ) {
+		echo do_shortcode($content) ;
+		}else{ echo 'Members Only Login Here'; wp_login_form( $args ); }/* // login check */;		
+		//.............................................................................................
+		$output_qw_members_obj = ob_get_contents(); 
+		ob_end_clean();
+		return $output_qw_members_obj;
+	
+	}// END SHORTCODE
+	add_shortcode( 'qw_members', 'members_qw' );
