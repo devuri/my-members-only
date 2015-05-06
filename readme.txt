@@ -3,7 +3,7 @@ Contributors: qweelo, icelayer, sirwil
 Tags: member, members, profile, role, roles, shortcode, user, access, authentication, block, community, content, login, membership, password, permissions, register, registration, restriction, security, sirwil, iceyi, icelayer, jrpage, qweelo, members only,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6D6W2KXB88NKE
 Requires at least: 3.4
-Tested up to: 4.0
+Tested up to: 4.2.1
 
 Stable tag: 1.6.1
 
