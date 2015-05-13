@@ -32,7 +32,7 @@
 
 /*----------------------------------------------------
 				* ACCESS DENIED *
-----------------------------------------------------*/	
+----------------------------------------------------*/
 	$qwpluginpathe = 'iceyi-members-only-main.php';
 
 	if (basename($_SERVER['SCRIPT_FILENAME']) == $qwpluginpathe)
@@ -57,9 +57,9 @@
 ----------------------------------------------------*/	
 //.......CONSTANTS
 
-		define('QMOS_HEADER', dirname( __FILE__ ) .'/admin-header.php');
-		define('QMOS_PAGE', dirname( __FILE__ ) .'/admin-page.php');		
-		define('QMOS_FOOTER', dirname( __FILE__ ) .'/admin-footer.php');
+		define('QMOS_HEADER', plugin_dir_path( __FILE__ ).'/admin-header.php');
+		define('QMOS_PAGE', plugin_dir_path( __FILE__ ) .'/admin-page.php');		
+		define('QMOS_FOOTER', plugin_dir_path( __FILE__ ) .'/admin-footer.php');
 /*----------------------------------------------------
 				* ADMIN MENU *
 ----------------------------------------------------*/	
