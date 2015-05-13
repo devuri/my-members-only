@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Protect content in posts and pages with shortcodes [membersonly] protected[/membersonly] .
 
 == Description ==
-[iCeyi Members Only Shortcode](http://qweelo.com/iceyi-members-only-shortcode/) makes it easy for anyone to protect content on a WordPress site in any post or page using shortcodes. 
+[iCeyi Members Only Shortcode](http://qweelo.com/iceyi-members-only-shortcode/) is a free WordPress plugin that makes it easy for anyone to protect content on a WordPress site in any post or page using shortcodes. 
 
 `[membersonly] protected [/membersonly] `
 
@@ -33,6 +33,12 @@ The following is and example of nested shortcodes on your site:
 Page Content .
 
 [/membersonly]`
+
+For Maximum Compatibility Use Shortcodes 
+`[qw_members] protected content here [/qw_members] `
+
+
+The user must be logged in to view  content, if not the user will be presented with the wordpress login form.
 
 == Screenshots ==
 1. Protect Your Content .

@@ -1,6 +1,6 @@
 <?php
 /*
-	Plugin Name: iCeyi Members Only Shortcode
+	Plugin Name: iCeyi Members Only
 	Plugin URI: http://qweelo.com/wordpress-plugins/
 	Description: Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view.
 	Version: 2.2.0
