@@ -20,7 +20,15 @@ Protect content in posts and pages with shortcodes [membersonly] protected[/memb
 
 The shortcode can be used along with other shortcodes, this plugin is very simple and light weight making it a very usefull tool for any WordPress site. 
 
-Restrict access to downloads, articles in whole or part, videos, forums, support and more, keep it simple less is more set it and forget it. 
+= Restrict Access To =
+* Downloads  
+* Articles in whole or part, 
+* Videos
+* Private Forums 
+* Premium support 
+* And more 
+
+Keep it simple less is more set it and forget it. 
 
 = Example Shortcodes =
 
