@@ -24,7 +24,7 @@ Restrict access to downloads, articles in whole or part, videos, forums, support
 
 = Example Shortcodes =
 
-The following is and example of nested shortcodes on your site:
+The following is an example of nested shortcodes on your site:
 
 `[membersonly]
 
