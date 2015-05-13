@@ -1,15 +1,15 @@
 <?php
 /*
-Plugin Name: iCeyi Members Only Shortcode
-Plugin URI: http://qweelo.com/wordpress-plugins/
-Description: Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view.
-Version: 2.1.0
-Author URI: http://qweelo.com/
-License: GPLv2 or later
-Text Domain: qw-iceyi-mos
-Usage: Simple and easy to use, install and activate.
+	Plugin Name: iCeyi Members Only Shortcode
+	Plugin URI: http://qweelo.com/wordpress-plugins/
+	Description: Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view.
+	Version: 2.2.0
+	Author: Qweelo
+	Author URI: http://qweelo.com/
+	License: GPLv2 or later
+	Text Domain: qw-iceyi-mos
+	Usage: Simple and easy to use, install and activate.
 
-Author URI: http://.qweelo.com
 */
 
 /*------------------------------------------------------------------*/
@@ -33,14 +33,13 @@ Author URI: http://.qweelo.com
 /*----------------------------------------------------
 				* ACCESS DENIED *
 ----------------------------------------------------*/	
-
 	$qwpluginpathe = 'iceyi-members-only-main.php';
 
 	if (basename($_SERVER['SCRIPT_FILENAME']) == $qwpluginpathe)
 		{
-		die ("<title>QWEELO &#8212; Qweelo.com </title><div align='center'><h1>QWEELO</h1>SOMETHING WENT WRONG PLEASE CONTACT SUPPORT!!!</div>");
+	die ("<title>QWEELO &#8212; Qweelo.com </title><div align='center'><h1>QWEELO</h1>SOMETHING WENT WRONG PLEASE CONTACT SUPPORT!!!</div>");
 	}
-	
+
 /*----------------------------------------------------
 				* LANG STUFF *
 ----------------------------------------------------*/	
@@ -58,13 +57,8 @@ Author URI: http://.qweelo.com
 ----------------------------------------------------*/	
 //.......CONSTANTS
 
-		// header
 		define('QMOS_HEADER', dirname( __FILE__ ) .'/admin-header.php');
-
-		// plugin page
 		define('QMOS_PAGE', dirname( __FILE__ ) .'/admin-page.php');		
-
-		// plugin footer
 		define('QMOS_FOOTER', dirname( __FILE__ ) .'/admin-footer.php');
 /*----------------------------------------------------
 				* ADMIN MENU *
@@ -87,11 +81,8 @@ Author URI: http://.qweelo.com
 				* RENDER ADMIN PAGE FUNCTION   *
 ------------------------------------------------------------------*/	
 	function admin_page_qwmos(){					
-				//HEADER;
 				include_once(QMOS_HEADER);
-				//PAGE;
 				include_once(QMOS_PAGE);			
-				//FOOTER;
 				include_once(QMOS_FOOTER);
 	}// fend	
 

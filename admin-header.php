@@ -5,7 +5,7 @@
 				echo '<h2>';
 				//plugin name
 				_e('iCeyi Members Only Shortcode' , 'qw-iceyi-mos'); 
-				echo '<a href="http://qweelo.com/wordpress" class="add-new-h2" target="_blank">';
+				echo '<a href="http://qweelo.com/wordpress-plugins" class="add-new-h2" target="_blank">';
 				_e('Qweelo Plugins' , 'qw-iceyi-mos');
 				echo '</a>';
 				echo '</h2>';
