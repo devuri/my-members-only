@@ -66,17 +66,9 @@
 	
 	add_action('admin_menu', 'qw_qwmos_menu_page');
 	function qw_qwmos_menu_page() {
-			
-				$page_title ='Members Only Shortcode';
-				$menu_title = 'iCeyi Members';
-				$capability = 'manage_options';
-				$menu_slug = 'iceyi-mos-qw';
-				$function = 'admin_page_qwmos';
-				$position = '6.124';
-				$icon_url = '';
-				add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
-		
+		add_options_page('Members Only Shortcode', 'iCeyi Members ', 'manage_options', 'iceyi-mos-qw-options', 'admin_page_qwmos', '2.124');
 	}	//fend
+	
 /*------------------------------------------------------------------
 				* RENDER ADMIN PAGE FUNCTION   *
 ------------------------------------------------------------------*/	
