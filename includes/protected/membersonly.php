@@ -9,7 +9,7 @@ function sw_membersonlypost() {
 
 	$labels = array(
 		'name'                  => _x( 'Members Only', 'Post Type General Name', 'my-members-only' ),
-		'singular_name'         => _x( 'Member Only Post', 'Post Type Singular Name', 'my-members-only' ),
+		'singular_name'         => _x( 'Member Only Content', 'Post Type Singular Name', 'my-members-only' ),
 		'menu_name'             => __( 'Members Only', 'my-members-only' ),
 		'name_admin_bar'        => __( 'Member Only', 'my-members-only' ),
 		'archives'              => __( 'Member Only Archives', 'my-members-only' ),
@@ -45,6 +45,7 @@ function sw_membersonlypost() {
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
+		'show_in_rest'       		=> true,
 		'show_in_menu'          => true,
 		'menu_position'         => null,
 		'menu_icon'             => 'dashicons-lock',
@@ -56,7 +57,7 @@ function sw_membersonlypost() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'smembersonly', $args );
+	register_post_type( 'membersonly', $args );
   }
 	add_action( 'init', 'sw_membersonlypost', 0 );
 }
