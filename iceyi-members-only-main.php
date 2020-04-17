@@ -135,8 +135,26 @@
   $smymoloader->autoload('includes/shortcode','qw_members');
 
 /**
- *  New Built In Protected Post Type
+ * New Built In Protected Post Type
+ *
+ * Added in Version 6.5
+ *
+ * Activate the new Feature "Members Only Content"
+ * What is Members Only Content, Members Only content allows you to create
+ * Special content that only your members can see, use the members only category
+ * to setup who can view content
+ * use special categories for special acccess levels
+ * by defualt all post in the members only content area is protected
+ *
+ * by defualt only if a user is logged in they will be able to acccess
+ * the defualt access level is subscriber for all content in the
+ * "members only content" section
+ *
+ *
+ *
  *
  * @since 6.2
  */
 $smymoloader->autoload('includes/protected','membersonly');
+$smymoloader->autoload('includes/protected','protected-filter');
+$smymoloader->autoload('includes/protected','members-category');
