@@ -41,7 +41,7 @@ Protected Content
 New Shortcode Options Use With Options
 
 * display="Custom text" change the message for none logged in user (default: You Must be Logged in to view this content)
-* linkto="/wp-admin/" Link to specific page, recommended usage would be to use /wp-admin/ without http://wwww this is very good practice in case if you are using SSL or custom sub domain, Note that this will also disable Auto redirect (default: WordPress Login Page)
+* linkto="/wp-admin/" Link to specific page, recommended usage would be to use /wp-admin/ without http://www this is very good practice in case if you are using SSL or custom sub domain, Note that this will also disable Auto redirect (default: WordPress Login Page)
 * linktext="Click Here" change the text for link (default: Register or Login Here)
 
 
