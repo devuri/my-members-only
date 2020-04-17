@@ -74,7 +74,7 @@
 	add_action('admin_menu', 'swmy_members_only');
 	function swmy_members_only() {
 		add_submenu_page(
-			'options-general.php',
+			'edit.php?post_type=membersonly',
 			'My Members Only Shortcode',
 			'Members Only',
 			'manage_options',
