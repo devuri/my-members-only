@@ -1,4 +1,4 @@
-=== Members Only Membership - Simple membership plugin for WordPress ===
+=== My Members Only - Membership for WordPress ===
 Contributors: icelayer, sirwil
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6D6W2KXB88NKE
 Tags: membership, memberships, restrict content, members, restrict, restrict access, profile, role, roles, members shortcode, user, access, authentication, block, community, content, login, password, permissions, register, registration, restriction, security, members only,
@@ -13,7 +13,7 @@ Protect content in posts and pages with shortcodes.
 
 == Description ==
 
-[My Members Only](https://switchwebdev.com/wordpress-plugins/) WordPress Plugin makes it easy for anyone to protect content on a WordPress site in any post or page using shortcodes.
+[My Members Only](https://switchwebdev.com/wordpress-plugins/) WordPress Plugin makes it easy for anyone to protect content on a WordPress site in any post or page using members-only content type and shortcodes.
 
 `[membersonly]
 Protected Content Here
@@ -36,6 +36,17 @@ Protected Content
 
 ★★★★★
 > Superb “Plugin is Superb! exactly what I wanted thanks - [zala5958](https://wordpress.org/support/users/zala5958/)
+
+
+=  Built-In Protected Members Only Content =
+
+What is Members Only Content, Members Only content allows you to create special content that only your members can see.
+
+> all post in the members-only content area is protected.
+
+Only if a user is logged in they will be able to access, the default access level is a subscriber for all content in the "members-only content" section.
+
+> members-only content does not affect shortcode content restrictions, this feature allows for full content protection.
 
 = New in 4.5 =
 * Present Users who are not logged in with a link to "Register or Login Here",
@@ -89,11 +100,15 @@ This Plugin does not support full website lock-down at this time.
 
 Yes, this plugin will work with any WordPress theme.
 
+=  =
+
+
+
 
 == Screenshots ==
 
-1. Protect Content With [membersonly] Shortcode
-2. Visitors Will Be Presented with a login form
+1. ...
+2. ..
 
 == Changelog ==
 
