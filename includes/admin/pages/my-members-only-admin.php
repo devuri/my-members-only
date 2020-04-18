@@ -16,7 +16,7 @@
 
 			echo '<ul>';
 			echo '<li> <strong> display="Custom text" </strong> change the message for none logged in user (defualt: You Must be Logged in to view this content)</li>';
-			echo '<li> <strong> linkto="/wp-admin/" </strong> Link to specific page, recommended usage would be to use /wp-admin/ without http://wwww this is very good practice incase if you are using SSL or custom sub domain, <strong> Note that this will also disable Auto redirect </strong>  (defualt: WordPress Login Page) </li>';
+			echo '<li> <strong> linkto="/wp-admin/" </strong> Link to specific page, recommended usage would be to use /wp-admin/ without http://www this is very good practice incase if you are using SSL or custom sub domain, <strong> Note that this will also disable Auto redirect </strong>  (defualt: WordPress Login Page) </li>';
 			echo '<li> <strong> linktext="Click Here" </strong> change the text for link (defualt: Register or Login Here)</li>';
 			echo '</ul>';
 

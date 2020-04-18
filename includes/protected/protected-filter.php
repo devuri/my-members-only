@@ -34,10 +34,10 @@ function members_only_message(){ ?>
 	Sorry You Need to Login!
 	<hr/>
 	<button class="members-only-button">
-	<a href="'.wp_login_url( get_permalink() ).'" title="Members Area Login" rel="home">Members Area</a>
+	<a href="<?php echo wp_login_url( get_permalink() ); ?>" title="Members Area Login" rel="home">Members Area</a>
 	</button>
 	<button class="members-only-button">
-	<a href="'.wp_login_url( get_permalink() ).'" title="Log In" rel="home">Log In</a>
+	<a href="<?php echo wp_login_url( get_permalink() ); ?>" title="Log In" rel="home">Log In</a>
 	</button>
 	</div>
 <?php }
