@@ -1,4 +1,7 @@
 <?php
+
+	// @codingStandardsIgnoreFile
+
 /**
  * https://developer.wordpress.org/reference/functions/register_post_type/
  */
