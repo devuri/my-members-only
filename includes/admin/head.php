@@ -9,8 +9,10 @@
 	margin-left: -20px;
 	margin-bottom: 20px;
 }
-</style><header class="sw-header"></header><?php
-
+</style>
+	<header class="sw-header">
+		</header>
+			<?php
 				echo '<div class="wrap">';
 				//echo '<span class="dashicons-admin-settings"></span> a';
 				echo '<h2>';

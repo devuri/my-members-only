@@ -1,6 +1,12 @@
 <?php
 
-// Register Custom Category
+	// @codingStandardsIgnoreFile 
+
+/**
+ * Register Custom Category.
+ *
+ * @return void
+ */
 function members_category() {
 
 	$labels = array(
