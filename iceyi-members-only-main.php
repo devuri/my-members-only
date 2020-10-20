@@ -5,7 +5,7 @@
  * Description: Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view. After they log in they will be redirected back to view the content.
  * Author:      SwitchWebdev.com
  * Author URI:  https://switchwebdev.com
- * Version:     6.7.2
+ * Version:     6.7.3
  * License:     GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: my-members-only
@@ -43,7 +43,7 @@
     }
 
 	// plugin directory.
-	define( 'SWMYMO_VERSION', '6.7.2' );
+	define( 'SWMYMO_VERSION', '6.7.3' );
 
 	// plugin directory.
 	define( 'SWMYMO_DIR', plugin_dir_path( __FILE__ ) );
@@ -81,7 +81,7 @@
 			'Members Shortcode',
 			'manage_options',
 			'my-members-only-shortcode',
-			'my_members_only_settings_page',
+			'my_members_only_settings_page'
 		);
 	}
 	add_action( 'admin_menu', 'swmy_members_only' );
