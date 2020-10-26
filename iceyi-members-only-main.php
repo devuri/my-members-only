@@ -5,7 +5,7 @@
  * Description: Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view. After they log in they will be redirected back to view the content.
  * Author:      SwitchWebdev.com
  * Author URI:  https://switchwebdev.com
- * Version:     6.7.3
+ * Version:     6.8.0
  * License:     GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: my-members-only
