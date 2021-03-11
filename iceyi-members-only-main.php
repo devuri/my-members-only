@@ -3,7 +3,7 @@
  * Plugin Name: My Members Only
  * Plugin URI:  https://switchwebdev.com/wordpress-plugins/
  * Description: Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view. After they log in they will be redirected back to view the content.
- * Author:      SwitchWebdev.com
+ * Author:      Uriel Wilson
  * Author URI:  https://switchwebdev.com
  * Version:     6.8.0
  * License:     GPLv2
@@ -16,7 +16,7 @@
  * Requires PHP: 5.4+
  * Tested up to PHP: 7.0
  *
- * Copyright 2018 - 2020 Uriel Wilson, support@switchwebdev.com
+ * Copyright 2014 - 2021 Uriel Wilson, support@switchwebdev.com
  * License: GNU General Public License
  * GPLv2 Full license details in license.txt
  *
@@ -117,13 +117,16 @@
 				$smym_only_support = plugin_basename( __FILE__ );
 					if ( $smym_only_support === $plugin_file ) {
 							$support_link = array( 'support' => '<a style="color:green;" href="https://wordpress.org/support/plugin/iceyi-members-only" target="_blank" title="Get Support"> Support </a>' );
-							$settings = array( 'settings' => '<a href="options-general.php?page=my-members-only-settings"  title="Update Settings"> ' . __( 'Settings', 'my-members-only' ) . '</a>' ); // @codingStandardsIgnoreLine
+							$settings = array( 'settings' => '<a href="'.esc_url( admin_url( 'edit.php?post_type=membersonly&page=my-members-only-shortcode' ) ).'"  title="Update Settings"> ' . __( 'Settings', 'my-members-only' ) . '</a>' ); // @codingStandardsIgnoreLine
 				$actions = array_merge( $settings, $actions );
 				$actions = array_merge( $support_link, $actions );
 				}
 				return $actions;
 		}, 10, 5
 	);
+
+
+
 
 	/**
 	 *  Load the Shortcodes [membersonly]
