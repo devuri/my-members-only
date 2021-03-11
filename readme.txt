@@ -3,7 +3,7 @@ Contributors: icelayer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6D6W2KXB88NKE
 Tags: membership, memberships, restrict content, members, restrict, restrict access, profile, role, roles, members shortcode, user, access, authentication, block, community, content, login, password, permissions, register, registration, restriction, security, members only,
 Requires at least: 3.4
-Tested up to: 5.5
+Tested up to: 5.7
 Stable tag: 6.8.0
 Requires PHP: 5.4
 License: GNU Version 2 or Any Later Version
