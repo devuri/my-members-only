@@ -19,8 +19,8 @@
 				//plugin name
 				_e('Members Only ' , 'my-members-only');
 				//echo icde_info('version');
-				echo '<a href="https://switchwebdev.com/wordpress-plugins/" class="add-new-h2" target="_blank">';
-				_e('by SwitchWebdev.com' , 'my-members-only');
+				echo '<a href="https://wpbrisko.com/wordpress-plugins/" class="add-new-h2" target="_blank">';
+				_e('by wpbrisko.com' , 'my-members-only');
 				echo '</a>';
 				echo ' <a href="https://wordpress.org/support/plugin/iceyi-members-only/reviews/" class="button button-primary" target="_blank">';
 				_e(' Leave a Review' , 'my-members-only');

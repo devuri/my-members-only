@@ -1,40 +1,19 @@
 <?php
 /**
- * Plugin Name: My Members Only
- * Plugin URI:  https://switchwebdev.com/wordpress-plugins/
- * Description: Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view. After they log in they will be redirected back to view the content.
- * Author:      Uriel Wilson
- * Author URI:  https://switchwebdev.com
- * Version:     6.8.5
- * License:     GPLv2
- * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain: my-members-only
- * Domain Path: languages
- * Usage:       Simple and easy to use, install and activate.
- * Tags:        member, members, profile, role, roles, shortcode, user, access, authentication, block, community, content, login, membership, password, permissions, register, registration, restriction, security, members only,
- *
- * Requires PHP: 5.4+
- * Tested up to PHP: 7.0
- *
- * Copyright 2014 - 2021 Uriel Wilson, support@switchwebdev.com
- * License: GNU General Public License
- * GPLv2 Full license details in license.txt
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- * -----------------------------------------------------------------------------
- *
- * @category  Plugin
- * @copyright Copyright © Uriel Wilson.
- * @package   MyMembersOnly
- * @author    Uriel Wilson
- * @link      https://switchwebdev.com
- *  ----------------------------------------------------------------------------
+ * Plugin Name:       My Members Only
+ * Plugin URI:        https://wpbrisko.com/wordpress-plugins/
+ * Description:       Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view. After they log in they will be redirected back to view the content.
+ * Version:           6.8.7
+ * Requires at least: 5.3.0
+ * Requires PHP:      7.4
+ * Author:            wpbrisko.com
+ * Author URI:        https://wpbrisko.com
+ * Text Domain:       my-members-only
+ * Domain Path:       /languages
+ * Usage:             Simple and easy to use, install and activate.
+ * Tags:              member, members, profile, role, roles, shortcode, user, access, authentication, block, community, content, login, membership, password, permissions, register, registration, restriction, security, members only,
+ * License:           GPLv2
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
   	// deny direct access.
