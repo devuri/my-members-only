@@ -3,7 +3,7 @@
  * Plugin Name:       My Members Only
  * Plugin URI:        https://wpbrisko.com/wordpress-plugins/
  * Description:       Provides shorcodes to protect content in posts and pages, simply place the protected content between these shortcodes [membersonly] protected content here [/membersonly] the user must be logged in to view. After they log in they will be redirected back to view the content.
- * Version:           6.8.7
+ * Version:           6.8.9
  * Requires at least: 5.3.0
  * Requires PHP:      7.4
  * Author:            wpbrisko.com
