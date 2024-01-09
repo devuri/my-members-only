@@ -13,7 +13,7 @@ Protect content in posts and pages with shortcodes.
 
 == Description ==
 
-[My Members Only](https://switchwebdev.com/wordpress-plugins/) WordPress Plugin makes it easy for anyone to protect content on a WordPress site in any post or page using members-only content type and shortcodes.
+[My Members Only](https://wpbrisko.com/wordpress-plugins/) WordPress Plugin makes it easy for anyone to protect content on a WordPress site in any post or page using members-only content type and shortcodes.
 
 `[membersonly]
 Protected Content Here
